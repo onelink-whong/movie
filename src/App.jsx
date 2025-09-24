@@ -7,8 +7,7 @@ import { useEffect, useState } from "react";
 
 import Section from "./components/Section";
 import MovieDetail from "./components/MovieDetail";
-
-
+import Chatbot from "./components/Chatbot";
 
 export default function App() {
   const [nowPlaying, setNowPlaying] = useState([]);
@@ -67,6 +66,7 @@ export default function App() {
           <Route path='/movie/:id' element={<MovieDetail />} />
         </Routes>m 
       </main>
+      <Chatbot />
     </>
   )
 }
